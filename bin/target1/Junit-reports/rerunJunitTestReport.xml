@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="13.016" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Login" name="Successful Login with InValid Credentials" time="12.776">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;input type=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Password&quot; name=&quot;password&quot;&gt; is not clickable at point (981, 124). Other element would receive the click: &lt;div id=&quot;preloader&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=131.0.6778.110)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0f59fdfe512d7b7506a56c091c2c518e, clickElement {id=f.697C6FA9DC6B8DA33D58BA5E9F7A0B5A.d.FBBE20E9881CB020D3A2391AB9B0BA4F.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.110, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60232/devtoo..., se:cdpVersion: 131.0.6778.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0f59fdfe512d7b7506a56c091c2c518e)] -&gt; xpath: //*[@placeholder='Password']]
+Session ID: 0f59fdfe512d7b7506a56c091c2c518e">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="password" class="form-control" placeholder="Password" name="password"> is not clickable at point (981, 124). Other element would receive the click: <div id="preloader">...</div>
+  (Session info: chrome=131.0.6778.110)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.4'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [0f59fdfe512d7b7506a56c091c2c518e, clickElement {id=f.697C6FA9DC6B8DA33D58BA5E9F7A0B5A.d.FBBE20E9881CB020D3A2391AB9B0BA4F.e.41}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.110, chrome: {chromedriverVersion: 131.0.6778.108 (3b014839fbc..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60232/devtoo..., se:cdpVersion: 131.0.6778.110, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (0f59fdfe512d7b7506a56c091c2c518e)] -> xpath: //*[@placeholder='Password']]
+Session ID: 0f59fdfe512d7b7506a56c091c2c518e
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy40.click(Unknown Source)
+	at pageObjects.LoginPage.setPassword(LoginPage.java:49)
+	at stepDefinitions.Steps.user_enters_username_as_and_password_as(Steps.java:50)
+	at ✽.User enters Username as "Kumar12" and Password as "1234567"(file:///C:/Eclipse/nop/src/test/java/Features/Login.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User Launch Chrome broswer............................................passed
+When User opens URL "URL"...................................................passed
+And User enters Username as "Kumar12" and Password as "1234567".............failed
+And click on Login..........................................................skipped
+And Page Title should be as "CRMPRO"........................................skipped
+And close broswer...........................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
