@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="36.936" tests="2" skipped="0" failures="1" errors="0">
-<testcase classname="Login" name="Successful Login with Valid Credentials" time="24.681">
+<testsuite name="Cucumber" time="47.313" tests="2" skipped="0" failures="1" errors="0">
+<testcase classname="Login" name="Successful Login with Valid Credentials" time="33.255">
 <system-out><![CDATA[
 Given User Launch Chrome broswer............................................passed
 When User opens URL "URL"...................................................passed
+And I wait for 3000 milli Seconds...........................................passed
 And User enters Username as "Kumar12" and Password as "123456"..............passed
 And click on Login..........................................................passed
 And Page Title should be as "CRMPRO"........................................passed
 And close broswer...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Login" name="Successful Login with InValid Credentials" time="11.962">
+<testcase classname="Login" name="Successful Login with InValid Credentials" time="13.511">
 <failure type="java.lang.AssertionError">
 <![CDATA[java.lang.AssertionError
 	at org.junit.Assert.fail(Assert.java:87)
 	at org.junit.Assert.assertTrue(Assert.java:42)
 	at org.junit.Assert.assertTrue(Assert.java:53)
 	at stepDefinitions.Steps.page_title_should_be_as(Steps.java:64)
-	at ✽.Page Title should be as "CRMPRO"(file:///C:/Eclipse/nop/src/test/java/Features/Login.feature:17)
+	at ✽.Page Title should be as "CRMPRO"(file:///C:/Eclipse/CRM/src/test/java/Features/Login.feature:19)
 ]]>
 </failure>
 <system-out><![CDATA[
 Given User Launch Chrome broswer............................................passed
 When User opens URL "URL"...................................................passed
+And I wait for 3000 milli Seconds...........................................passed
 And User enters Username as "Kumar12" and Password as "1234567".............passed
 And click on Login..........................................................passed
 And Page Title should be as "CRMPRO"........................................failed

@@ -112,10 +112,6 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.1.2</version>
 		</dependency>
-<<<<<<< HEAD
-<!--
-		  TestNG Dependency 
-=======
 
 		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
@@ -133,16 +129,12 @@
 		</dependency>
 
 
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.7.1</version>
 			<scope>test</scope>
 		</dependency>
-<<<<<<< HEAD
-		-->
-=======
 		
 		<dependency>
 			<groupId>net.masterthought</groupId>
@@ -150,7 +142,6 @@
 			<version>5.7.2</version>
 		</dependency>
 
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 		<!-- Other necessary dependencies -->
 		<!-- Add any other specific dependencies as needed -->
 	</dependencies>

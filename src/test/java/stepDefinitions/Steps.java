@@ -28,24 +28,14 @@ public class Steps extends BaseClass {
 		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		// driver.manage().window().maximize();
-<<<<<<< HEAD
-		
-		lp=new LoginPage(driver);
-		arp=new AccountRegistrationPage(driver);
-=======
 
 		lp = new LoginPage(driver);
 		arp = new AccountRegistrationPage(driver);
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 	}
 
 	@When("User opens URL {string}")
 	public void user_opens_url(String string) {
-<<<<<<< HEAD
-		driver.get("https://tutorialsninja.com/demo/");
-=======
 		driver.get("https://classic.freecrm.com/index.html?e=1");
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 	}
 
 	@Then("User opens Loginpage")
@@ -54,19 +44,6 @@ public class Steps extends BaseClass {
 		lp.btnLogin();
 	}
 
-<<<<<<< HEAD
-	@Then("User enters Email as {string} and Password as {string}")
-	public void user_enters_email_as_and_password_as(String email, String pwd) {
-		lp.setUsername(email);
-		lp.setPassword(pwd);
-	}
-
-	@Then("Click on Login")
-	public void click_on_login() throws InterruptedException {
-		//Thread.sleep(3000);
-		lp.linkLogin();
-		
-=======
 	@Then("User enters Username as {string} and Password as {string}")
 	public void user_enters_username_as_and_password_as(String usename, String pwd) {
 		lp.setUsername(usename);
@@ -78,16 +55,11 @@ public class Steps extends BaseClass {
 		// Thread.sleep(3000);
 		lp.linkLogin();
 
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 	}
 
 	@Then("Page Title should be as {string}")
 	public void page_title_should_be_as(String title) {
-<<<<<<< HEAD
-		if (!driver.getPageSource().contains("My Account")) {
-=======
 		if (!driver.getPageSource().contains("CRMPRO")) {
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 			driver.close();
 			Assert.assertTrue(false);
 		} else {
@@ -95,13 +67,6 @@ public class Steps extends BaseClass {
 		}
 	}
 
-<<<<<<< HEAD
-	@When("User click on Log out link")
-	public void user_click_on_log_out_link() {
-		lp.clickLogout();
-	}
-
-=======
 	@Then("User click on Log out")
 	public void user_click_on_log_out() {
 		lp.clickLogout();
@@ -112,7 +77,6 @@ public class Steps extends BaseClass {
 		Thread.sleep(int1);
 	}
 
->>>>>>> aeacb7c549ad5639b7317f5d8d098fd0654b23c4
 	@Then("Page title should be {string}")
 	public void page_title_should_be(String title) {
 		if (!driver.getPageSource().contains("Account Logout")) {
