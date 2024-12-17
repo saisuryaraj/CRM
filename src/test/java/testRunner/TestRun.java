@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features={"src//test//java//Features/Login.feature"},
-		tags = "@Test",
+		tags = "@SCRUM-T1",
 		glue="stepDefinitions",
 		publish = true,
 		monochrome=true,
