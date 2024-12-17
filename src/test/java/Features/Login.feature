@@ -1,5 +1,5 @@
 Feature: Login
-@Test 
+@SCRUM-T1
 Scenario: Successful Login with Valid Credentials
     Given User Launch Chrome broswer
     When User opens URL "URL"
@@ -9,7 +9,7 @@ Scenario: Successful Login with Valid Credentials
     And Page Title should be as "CRMPRO"
     And close broswer
   
- @Test1 
+@SCRUM-T1
 Scenario: Successful Login with InValid Credentials
     Given User Launch Chrome broswer
     When User opens URL "URL"
