@@ -145,4 +145,19 @@
 		<!-- Other necessary dependencies -->
 		<!-- Add any other specific dependencies as needed -->
 	</dependencies>
+
+<plugin>
+  <groupId>io.cucumber</groupId>
+  <artifactId>cucumber-jvm</artifactId>
+  <version>7.15.0</version>
+  <configuration>
+    <reports>
+      <report>
+        <format>json</format>
+        <output>target/cucumber/cucumber.json</output>
+      </report>
+    </reports>
+  </configuration>
+</plugin>
+
 </project>
