@@ -9,7 +9,7 @@ Scenario: Successful Login with Valid Credentials
     And Page Title should be as "CRMPRO"
     And close broswer
   
-@SCRUM-T1
+@SCRUM-T12
 Scenario: Successful Login with InValid Credentials
     Given User Launch Chrome broswer
     When User opens URL "URL"
