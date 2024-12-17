@@ -9,7 +9,7 @@ import io.cucumber.junit.Cucumber;
 @RunWith(Cucumber.class)
 @CucumberOptions(features="@target/rerun.txt",
 	glue={"stepDefinitions"},
-	tags=("@Test"),
+	tags=("@SCRUM-T1"),
 	publish = true,
 	monochrome=true,
 	dryRun = false,
